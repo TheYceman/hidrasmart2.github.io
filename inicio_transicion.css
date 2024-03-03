@@ -1,0 +1,90 @@
+.scenes {
+    position: relative;
+  }
+
+  .scene_1, 
+  .scene_2,
+  .scene_3, 
+  .scene_4  {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+  }
+
+  .scene_2 {
+    border-radius: 50px 0 0 50px;
+    background-color: #009BDB;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 47.5%,
+      #fff 52.5%
+    );
+    -webkit-mask-size: 210%;
+    -webkit-mask-position: left;
+    padding: 2vw 2vw;
+  }
+
+  .scene_4 {
+    border-radius: 0 50px 50px 0px;
+    background-color: #009BDB;
+    -webkit-mask-image: linear-gradient(
+      to left,
+      transparent 47.5%,
+      #fff 52.5%
+    );
+    -webkit-mask-size: 210%;
+    -webkit-mask-position: right;
+    padding: 2vw 2vw;
+  }
+
+  .scene_2 img{
+    margin-left: 1.5vw;
+    height: 100%;
+  }
+
+  .scene_4 img{
+    margin-left: 16vw;
+    height: 100%;
+  }
+
+  .card_pipenetwork:is(:hover, :focus) .scene_2 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 0.8s linear;
+  }
+
+  .card_pipenetwork:not(:hover, :focus) .scene_2 {
+    -webkit-mask-position: left;
+    transition: -webkit-mask-position 0.5s linear;
+  }
+
+
+  .card_flowmetering:is(:hover, :focus) .scene_2 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 0.8s linear;
+  }
+
+  .card_flowmetering:not(:hover, :focus) .scene_2 {
+    -webkit-mask-position: left;
+    transition: -webkit-mask-position 0.5s linear;
+  }
+
+  .card_openchannel:is(:hover, :focus) .scene_4 {
+    -webkit-mask-position: left;
+    transition: -webkit-mask-position 0.8s linear;
+  }
+
+  .card_openchannel:not(:hover, :focus) .scene_4 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 0.5s linear;
+  }
+
+
+  .card_culvertmanagement:is(:hover, :focus) .scene_4 {
+    -webkit-mask-position: left;
+    transition: -webkit-mask-position 0.8s linear;
+  }
+
+  .card_culvertmanagement:not(:hover, :focus) .scene_4 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 0.5s linear;
+  }

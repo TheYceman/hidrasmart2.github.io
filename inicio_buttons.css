@@ -1,0 +1,175 @@
+body{
+    width: 98vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+.box_head_image{
+    margin-right: 6vw;
+}
+
+.head_image{
+    height: 15vw;
+}
+
+.container_cards {
+    display: flex;
+    width: 90vw;
+    height: 30vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-content: space-between;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box_card{
+    display: flex;
+    width: 50%;
+}
+
+.box_car_left{
+    flex-direction: row-reverse;
+}
+
+.float_card {
+    display: flex;
+    padding: 1.7vw;
+    width: 30vw;
+    height: 10vw;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    filter: drop-shadow(0 0 2rem black);
+}
+
+.float_card:hover {
+    /* transform: scale(1.15); */
+    position: initial;
+    transition: all 0.5s ease;
+}
+
+.float_card:not(:hover) {
+    transition: all 0.5s ease;
+}
+
+.card_pipenetwork{
+    border-radius: 50px 0 0 0;
+    background: 
+        radial-gradient(19vw 15.5vw at bottom right, #0000 98%, #fff) right;
+}
+
+.card_pipenetwork:hover{
+    width: 43vw;
+    position: relative;
+    filter: drop-shadow(0 0 2rem #dd931d);
+}
+
+.card_openchannel{
+    border-radius: 0px 0 50px 0;
+    justify-content: right;
+    background: 
+        radial-gradient(19vw 15.5vw at bottom left , #0000 98%, #fff) left;
+}
+
+.card_openchannel:hover{
+    width: 43vw;
+    position: relative;
+    filter: drop-shadow(0 0 2rem #a2c038);
+}
+
+.card_flowmetering{
+    border-radius: 50px 0 0 0;
+    background: 
+        radial-gradient(19vw 15.5vw at top right, #0000 98%, #fff) right;
+}
+
+.card_flowmetering:hover{
+    width: 43vw;
+    position: relative;
+    filter: drop-shadow(0 0 2rem #2d3884);
+}
+
+.card_culvertmanagement{
+    border-radius: 0px 0 50px 0;
+    justify-content: right;
+    background: 
+        radial-gradient(19vw 15.5vw at top left , #0000 98%, #fff) left;
+}
+
+.card_culvertmanagement:hover{
+    width: 43vw;
+    position: relative;
+    filter: drop-shadow(0 0 2rem #4e4d51);
+}
+
+.title_float_card {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.float_card .card_image_logo {
+    transition: height 1s ease;
+}
+
+.float_card:hover .card_image_logo {
+    height: 0%;
+}
+
+.float_card:not(:hover) .card_image_logo {
+    height: 100%;
+}
+
+.circle_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #009de0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.circle img{
+    
+    position: absolute;
+    transition: all 0.7s ease;
+}
+
+.img_default{
+    width: 20vw;
+    height: 20vw;
+    opacity: 1;
+}
+
+.img_app{
+    width: 30vw;
+    opacity: 0;
+}
+
